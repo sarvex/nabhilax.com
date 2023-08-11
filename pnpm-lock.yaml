@@ -41,8 +41,8 @@ devDependencies:
     specifier: 7.2.0
     version: 7.2.0(react-dom@18.2.0)(react@18.2.0)
   '@storybook/builder-vite':
-    specifier: 7.2.0
-    version: 7.2.0(typescript@5.1.6)(vite@4.4.7)
+    specifier: 7.2.2
+    version: 7.2.2(typescript@5.1.6)(vite@4.4.7)
   '@storybook/html':
     specifier: 7.2.0
     version: 7.2.0(@babel/core@7.22.9)
@@ -3186,6 +3186,47 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/builder-vite@7.2.2(typescript@5.1.6)(vite@4.4.7):
+    resolution: {integrity: sha512-3YDxZPJsHOsRQob/85X2Xf6pYfwbQilJBsEcuwmEV0JEO4p3JijOlO8xV58uCjkZSpuJ0ARl6t5oCMBo89DKCQ==}
+    peerDependencies:
+      '@preact/preset-vite': '*'
+      typescript: '>= 4.3.x'
+      vite: ^3.0.0 || ^4.0.0
+      vite-plugin-glimmerx: '*'
+    peerDependenciesMeta:
+      '@preact/preset-vite':
+        optional: true
+      typescript:
+        optional: true
+      vite-plugin-glimmerx:
+        optional: true
+    dependencies:
+      '@storybook/channels': 7.2.2
+      '@storybook/client-logger': 7.2.2
+      '@storybook/core-common': 7.2.2
+      '@storybook/csf-plugin': 7.2.2
+      '@storybook/mdx2-csf': 1.1.0
+      '@storybook/node-logger': 7.2.2
+      '@storybook/preview': 7.2.2
+      '@storybook/preview-api': 7.2.2
+      '@storybook/types': 7.2.2
+      '@types/find-cache-dir': 3.2.1
+      browser-assert: 1.2.1
+      es-module-lexer: 0.9.3
+      express: 4.18.2
+      find-cache-dir: 3.3.2
+      fs-extra: 11.1.1
+      magic-string: 0.30.1
+      remark-external-links: 8.0.0
+      remark-slug: 6.1.0
+      rollup: 3.26.2
+      typescript: 5.1.6
+      vite: 4.4.7(@types/node@20.4.5)
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
   /@storybook/channel-postmessage@7.0.26:
     resolution: {integrity: sha512-ZvFLr/tUD9dWIjQtIn1JXHjqrbOP/uEEOqzwpKSVj0Cl4Vgc12s8hecbzBufkOF7fwLsFvfieSi7ENOmjoncdQ==}
     dependencies:
@@ -3563,6 +3604,15 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/csf-plugin@7.2.2:
+    resolution: {integrity: sha512-8iHeK0zfcCIXbcwQm89Bj6Ejqak/dXBwQUMFmgmKzJ4VdyzKdhLgRO3T3EYGsX4AvH0dnuAPONP5uVrGEF8iLw==}
+    dependencies:
+      '@storybook/csf-tools': 7.2.2
+      unplugin: 1.4.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@storybook/csf-tools@7.2.0:
     resolution: {integrity: sha512-ZxtztnaZKg6l7nKiRetvArUI4hu5OKYQ+Y3wtwTHfy34KEHiuxUwq+pJKm64IDB1wkR2QKrYhFlGwcmSyvTnWQ==}
     dependencies:
@@ -3808,6 +3858,10 @@ packages:
 
   /@storybook/preview@7.2.0:
     resolution: {integrity: sha512-x3pOQFvVqJgfjC2Wt5AKyyym1031m6crl+lmxsDUtcenEhFazJ5iVLzlB5x4p+98QMkblHPqsx8JUMbAALV8Xw==}
+    dev: true
+
+  /@storybook/preview@7.2.2:
+    resolution: {integrity: sha512-F3S3yK+RmpriADWnfVZsRN36WRT6LaFjD0sNrUkX8duxdnxNDaLFfJ3Cbxwyv/2lZ48uByIQbX2LC5HieVI0KA==}
     dev: true
 
   /@storybook/react-dom-shim@7.2.0(react-dom@18.2.0)(react@18.2.0):
@@ -9827,7 +9881,7 @@ packages:
       '@builder.io/qwik': '>=0.15.2'
     dependencies:
       '@builder.io/qwik': 1.2.6(undici@5.22.1)
-      '@storybook/builder-vite': 7.2.0(typescript@5.1.6)(vite@4.4.7)
+      '@storybook/builder-vite': 7.2.2(typescript@5.1.6)(vite@4.4.7)
       '@storybook/docs-tools': 7.0.26
       magic-string: 0.30.1
       react-docgen-typescript: 2.2.2(typescript@5.1.6)
