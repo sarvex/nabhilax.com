@@ -44,8 +44,8 @@ devDependencies:
     specifier: 7.2.2
     version: 7.2.2(typescript@5.1.6)(vite@4.4.9)
   '@storybook/html':
-    specifier: 7.2.2
-    version: 7.2.2(@babel/core@7.22.9)
+    specifier: 7.2.3
+    version: 7.2.3(@babel/core@7.22.9)
   '@storybook/html-vite':
     specifier: 7.2.2
     version: 7.2.2(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.4.9)
@@ -3383,6 +3383,13 @@ packages:
       '@storybook/preview-api': 7.2.2
     dev: true
 
+  /@storybook/core-client@7.2.3:
+    resolution: {integrity: sha512-7qBhUbDA+Y5P0j8TwK1YlWQglMri+a9Oe9kt3XBaskDjo1WI56F8uM5Zoc9HKNgZXvGYH+XvpDkulU5V52u+6A==}
+    dependencies:
+      '@storybook/client-logger': 7.2.3
+      '@storybook/preview-api': 7.2.3
+    dev: true
+
   /@storybook/core-common@7.0.26:
     resolution: {integrity: sha512-rojZblzB0egNXX0bZ7R3TuPDiBSIhxpZCrorrDMHOZ8F+zuBxyTiZ0yMxEDn7i46T2n1vX+hUHhwZVxZrLn/ZQ==}
     dependencies:
@@ -3656,6 +3663,24 @@ packages:
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 7.2.2
       '@storybook/types': 7.2.2
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@storybook/html@7.2.3(@babel/core@7.22.9):
+    resolution: {integrity: sha512-Vn8YS8vzq3E7gtnGP9IFI8pvDM5vXmaQ2acHfJ/FRvwt5QQUk2+wSjy1JMNJVy0rDVfdzXk+5u/PrbkeulTsrQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+    dependencies:
+      '@babel/core': 7.22.9
+      '@storybook/core-client': 7.2.3
+      '@storybook/docs-tools': 7.2.3
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.2.3
+      '@storybook/types': 7.2.3
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - encoding
