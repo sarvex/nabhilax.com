@@ -80,8 +80,8 @@ devDependencies:
     specifier: 3.3.3
     version: 3.3.3
   prettier-plugin-tailwindcss:
-    specifier: 0.6.5
-    version: 0.6.5(prettier@3.3.3)
+    specifier: 0.6.6
+    version: 0.6.6(prettier@3.3.3)
   storybook:
     specifier: 8.1.9
     version: 8.1.9(react-dom@18.2.0)(react@18.2.0)
@@ -89,8 +89,8 @@ devDependencies:
     specifier: 0.4.0
     version: 0.4.0(@builder.io/qwik@1.5.7)(@types/node@20.14.14)(prettier@3.3.3)(typescript@5.4.5)(vite@5.3.5)
   tailwindcss:
-    specifier: 3.4.7
-    version: 3.4.7
+    specifier: 3.4.10
+    version: 3.4.10
   typescript:
     specifier: 5.4.5
     version: 5.4.5
@@ -9101,8 +9101,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.5(prettier@3.3.3):
-    resolution: {integrity: sha512-axfeOArc/RiGHjOIy9HytehlC0ZLeMaqY09mm8YCkMzznKiDkwFzOpBvtuhuv3xG5qB73+Mj7OCe2j/L1ryfuQ==}
+  /prettier-plugin-tailwindcss@0.6.6(prettier@3.3.3):
+    resolution: {integrity: sha512-OPva5S7WAsPLEsOuOWXATi13QrCKACCiIonFgIR6V4lYv4QLp++UXVhZSzRbZxXGimkQtQT86CC6fQqTOybGng==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -9116,6 +9116,7 @@ packages:
       prettier-plugin-import-sort: '*'
       prettier-plugin-jsdoc: '*'
       prettier-plugin-marko: '*'
+      prettier-plugin-multiline-arrays: '*'
       prettier-plugin-organize-attributes: '*'
       prettier-plugin-organize-imports: '*'
       prettier-plugin-sort-imports: '*'
@@ -9141,6 +9142,8 @@ packages:
       prettier-plugin-jsdoc:
         optional: true
       prettier-plugin-marko:
+        optional: true
+      prettier-plugin-multiline-arrays:
         optional: true
       prettier-plugin-organize-attributes:
         optional: true
@@ -10163,8 +10166,8 @@ packages:
       csso: 5.0.5
       picocolors: 1.0.1
 
-  /tailwindcss@3.4.7:
-    resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
+  /tailwindcss@3.4.10:
+    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
