@@ -41,7 +41,7 @@
     "@types/node": "20.16.0",
     "@typescript-eslint/eslint-plugin": "8.27.0",
     "@typescript-eslint/parser": "8.27.0",
-    "@vitest/ui": "1.6.0",
+    "@vitest/ui": "3.0.9",
     "autoprefixer": "10.4.20",
     "eslint": "9.23.0",
     "eslint-plugin-qwik": "1.12.1",
