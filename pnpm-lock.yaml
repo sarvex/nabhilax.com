@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@modular-forms/qwik':
     specifier: 0.29.1
-    version: 0.29.1(@builder.io/qwik-city@1.8.0)(@builder.io/qwik@1.12.1)(typescript@5.8.2)
+    version: 0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.12.1)(typescript@5.8.2)
   '@qwikest/icons':
     specifier: 0.0.13
     version: 0.0.13(@builder.io/qwik@1.12.1)
@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.12.1
     version: 1.12.1(vite@6.2.3)
   '@builder.io/qwik-city':
-    specifier: 1.8.0
-    version: 1.8.0(@types/node@20.16.0)
+    specifier: 1.12.1
+    version: 1.12.1(typescript@5.8.2)(vite@6.2.3)
   '@playwright/test':
     specifier: 1.51.1
     version: 1.51.1
@@ -87,7 +87,7 @@ devDependencies:
     version: 8.2.9
   storybook-framework-qwik:
     specifier: 0.4.1
-    version: 0.4.1(@builder.io/qwik@1.12.1)(@types/node@20.16.0)(prettier@3.5.3)(storybook@8.2.9)(typescript@5.8.2)(vite@6.2.3)
+    version: 0.4.1(@builder.io/qwik@1.12.1)(prettier@3.5.3)(storybook@8.2.9)(typescript@5.8.2)(vite@6.2.3)
   tailwindcss:
     specifier: 4.0.17
     version: 4.0.17
@@ -130,7 +130,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/highlight': 7.24.6
-      picocolors: 1.0.1
+      picocolors: 1.1.1
     dev: true
 
   /@babel/compat-data@7.24.6:
@@ -385,7 +385,7 @@ packages:
       '@babel/helper-validator-identifier': 7.24.6
       chalk: 2.4.2
       js-tokens: 4.0.0
-      picocolors: 1.0.1
+      picocolors: 1.1.1
     dev: true
 
   /@babel/parser@7.24.6:
@@ -1399,30 +1399,26 @@ packages:
     hasBin: true
     dev: true
 
-  /@builder.io/qwik-city@1.8.0(@types/node@20.16.0):
-    resolution: {integrity: sha512-3WCyKFf8E5W2HlL/VtYneXsY/d7llNRUo3Bc/PonOgEUpNYM3i7ts9M3MSnkKYf7dLm648+MSeP/x2Ll01lz7Q==}
+  /@builder.io/qwik-city@1.12.1(typescript@5.8.2)(vite@6.2.3):
+    resolution: {integrity: sha512-YLW+33PZVoc4O30J99Fs3uNNpi7BszPzaITKoW66Sphju5Ptn6HDQkfnBu2sHFB0bh8hWLWatAjOM1HXg/C96Q==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
+    peerDependencies:
+      vite: ^5
     dependencies:
       '@mdx-js/mdx': 3.0.1
       '@types/mdx': 2.0.13
       source-map: 0.7.4
       svgo: 3.3.2
       undici: 7.6.0
-      vfile: 6.0.1
-      vite: 5.4.15(@types/node@20.16.0)
+      valibot: 1.0.0(typescript@5.8.2)
+      vfile: 6.0.2
+      vite: 6.2.3(@types/node@20.16.0)
       vite-imagetools: 7.0.4
       zod: 3.22.4
     transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
       - rollup
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
       - supports-color
-      - terser
+      - typescript
 
   /@builder.io/qwik@1.12.1(vite@6.2.3):
     resolution: {integrity: sha512-fL+GuzJ/fp9OwhegPkn2dZXp4RjWnY0mNhgg7OJDS2qxftLmuJHs4sSJZ9ayvLRBVUNVPVX92u+SodiO5GDsnQ==}
@@ -1490,6 +1486,7 @@ packages:
     cpu: [ppc64]
     os: [aix]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/aix-ppc64@0.25.1:
@@ -1515,6 +1512,7 @@ packages:
     cpu: [arm64]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-arm64@0.25.1:
@@ -1540,6 +1538,7 @@ packages:
     cpu: [arm]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-arm@0.25.1:
@@ -1565,6 +1564,7 @@ packages:
     cpu: [x64]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-x64@0.25.1:
@@ -1590,6 +1590,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/darwin-arm64@0.25.1:
@@ -1615,6 +1616,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/darwin-x64@0.25.1:
@@ -1640,6 +1642,7 @@ packages:
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/freebsd-arm64@0.25.1:
@@ -1665,6 +1668,7 @@ packages:
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/freebsd-x64@0.25.1:
@@ -1690,6 +1694,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-arm64@0.25.1:
@@ -1715,6 +1720,7 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-arm@0.25.1:
@@ -1740,6 +1746,7 @@ packages:
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-ia32@0.25.1:
@@ -1765,6 +1772,7 @@ packages:
     cpu: [loong64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-loong64@0.25.1:
@@ -1790,6 +1798,7 @@ packages:
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-mips64el@0.25.1:
@@ -1815,6 +1824,7 @@ packages:
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-ppc64@0.25.1:
@@ -1840,6 +1850,7 @@ packages:
     cpu: [riscv64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-riscv64@0.25.1:
@@ -1865,6 +1876,7 @@ packages:
     cpu: [s390x]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-s390x@0.25.1:
@@ -1890,6 +1902,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-x64@0.25.1:
@@ -1923,6 +1936,7 @@ packages:
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/netbsd-x64@0.25.1:
@@ -1956,6 +1970,7 @@ packages:
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/openbsd-x64@0.25.1:
@@ -1981,6 +1996,7 @@ packages:
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/sunos-x64@0.25.1:
@@ -2006,6 +2022,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-arm64@0.25.1:
@@ -2031,6 +2048,7 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-ia32@0.25.1:
@@ -2056,6 +2074,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-x64@0.25.1:
@@ -2415,7 +2434,7 @@ packages:
   /@mdx-js/mdx@3.0.1:
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.0
       '@types/hast': 3.0.4
       '@types/mdx': 2.0.13
@@ -2437,7 +2456,7 @@ packages:
       unist-util-position-from-estree: 2.0.0
       unist-util-stringify-position: 4.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -2452,14 +2471,14 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.8.0)(@builder.io/qwik@1.12.1)(typescript@5.8.2):
+  /@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.12.1)(typescript@5.8.2):
     resolution: {integrity: sha512-xJb8wZXHEL0ioM5TlDpHUrXE4VKDf5OZbSoMtzmew9aHUGMDfsIGzSim408LaHHXa233YB76RhQZZAmO5Pgitg==}
     peerDependencies:
       '@builder.io/qwik': ^1.9.0 || ^2.0.0
       '@builder.io/qwik-city': ^1.9.0 || ^2.0.0
     dependencies:
       '@builder.io/qwik': 1.12.1(vite@6.2.3)
-      '@builder.io/qwik-city': 1.8.0(@types/node@20.16.0)
+      '@builder.io/qwik-city': 1.12.1(typescript@5.8.2)(vite@6.2.3)
       decode-formdata: 0.8.0
       valibot: 1.0.0(typescript@5.8.2)
     transitivePeerDependencies:
@@ -3254,9 +3273,6 @@ packages:
     dependencies:
       '@types/estree': 1.0.6
 
-  /@types/estree@1.0.5:
-    resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
-
   /@types/estree@1.0.6:
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
@@ -3595,8 +3611,8 @@ packages:
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.10
       '@rollup/pluginutils': 4.2.1
-      acorn: 8.12.1
-      acorn-import-attributes: 1.9.5(acorn@8.12.1)
+      acorn: 8.14.1
+      acorn-import-attributes: 1.9.5(acorn@8.14.1)
       async-sema: 3.1.1
       bindings: 1.5.0
       estree-walker: 2.0.2
@@ -3794,20 +3810,13 @@ packages:
       negotiator: 0.6.3
     dev: true
 
-  /acorn-import-attributes@1.9.5(acorn@8.12.1):
+  /acorn-import-attributes@1.9.5(acorn@8.14.1):
     resolution: {integrity: sha512-n02Vykv5uA3eHGM/Z2dQrcD56kL8TyDb2p1+0P83PClMnC/nc+anbQRhIOWnSq4Ke/KvDPrY3C9hDtC/A3eHnQ==}
     peerDependencies:
       acorn: ^8
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.1
     dev: true
-
-  /acorn-jsx@5.3.2(acorn@8.12.1):
-    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
-    peerDependencies:
-      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      acorn: 8.12.1
 
   /acorn-jsx@5.3.2(acorn@8.14.1):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -3815,23 +3824,16 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.14.1
-    dev: true
 
   /acorn-walk@8.3.2:
     resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /acorn@8.12.1:
-    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   /acorn@8.14.1:
     resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -4530,14 +4532,14 @@ packages:
     requiresBuild: true
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   /css-tree@2.3.1:
     resolution: {integrity: sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   /css-what@6.1.0:
     resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
@@ -5166,6 +5168,7 @@ packages:
       '@esbuild/win32-arm64': 0.21.5
       '@esbuild/win32-ia32': 0.21.5
       '@esbuild/win32-x64': 0.21.5
+    dev: true
 
   /esbuild@0.25.1:
     resolution: {integrity: sha512-BGO5LtrGC7vxnqucAe/rmvKdJllfGaYWdyABvyMoXQlfYMb2bbRuReWR5tEGE//4LcNJj9XrkovTqNYRFZHAMQ==}
@@ -6808,7 +6811,7 @@ packages:
       trim-lines: 3.0.1
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   /mdast-util-to-markdown@2.1.0:
     resolution: {integrity: sha512-SR2VnIEdVNCJbP6y7kVTJgPLifdr8WEU440fQec7qHoHOUz/oJ2jmNRqdDQ3rbiStOXb2mCDGTuwsK5OPUgYlQ==}
@@ -6941,8 +6944,8 @@ packages:
   /micromark-extension-mdxjs@3.0.0:
     resolution: {integrity: sha512-A873fJfhnJ2siZyUrJ31l34Uqwy4xIFmvPY1oj+Ean5PHcPBYzEsvqvWGaWcfEIr11O5Dlw3p2y0tZWpKHDejQ==}
     dependencies:
-      acorn: 8.12.1
-      acorn-jsx: 5.3.2(acorn@8.12.1)
+      acorn: 8.14.1
+      acorn-jsx: 5.3.2(acorn@8.14.1)
       micromark-extension-mdx-expression: 3.0.0
       micromark-extension-mdx-jsx: 3.0.0
       micromark-extension-mdx-md: 2.0.0
@@ -7664,9 +7667,6 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /picocolors@1.0.1:
-    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
-
   /picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -8103,7 +8103,7 @@ packages:
       '@types/mdast': 4.0.4
       mdast-util-to-hast: 13.1.0
       unified: 11.0.4
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   /require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -8386,10 +8386,6 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /source-map-js@1.2.0:
-    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
-    engines: {node: '>=0.10.0'}
-
   /source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -8435,7 +8431,7 @@ packages:
     resolution: {integrity: sha512-aFZ19IgVmhdB2uX599ve2kE6BIE3YMnQ6Gp6BURhW/oIzpXGKr878TQfAQZn1+i0Flcc/UKUy1gOlcfaUBCryg==}
     dev: true
 
-  /storybook-framework-qwik@0.4.1(@builder.io/qwik@1.12.1)(@types/node@20.16.0)(prettier@3.5.3)(storybook@8.2.9)(typescript@5.8.2)(vite@6.2.3):
+  /storybook-framework-qwik@0.4.1(@builder.io/qwik@1.12.1)(prettier@3.5.3)(storybook@8.2.9)(typescript@5.8.2)(vite@6.2.3):
     resolution: {integrity: sha512-uPrxOYGPs2I8NRu7u2hUW33MGAZrWMM6wxT9chV6CtL9Hj25x8v5hsgoNQf4Me1TJ2YlL4Z6LfiX9xfE8a8s5g==}
     engines: {node: ^14.18 || >=16}
     peerDependencies:
@@ -8447,22 +8443,14 @@ packages:
       magic-string: 0.30.10
       react-docgen-typescript: 2.2.2(typescript@5.8.2)
     optionalDependencies:
-      '@builder.io/qwik-city': 1.8.0(@types/node@20.16.0)
+      '@builder.io/qwik-city': 1.12.1(typescript@5.8.2)(vite@6.2.3)
     transitivePeerDependencies:
       - '@preact/preset-vite'
-      - '@types/node'
       - encoding
-      - less
-      - lightningcss
       - prettier
       - rollup
-      - sass
-      - sass-embedded
       - storybook
-      - stylus
-      - sugarss
       - supports-color
-      - terser
       - typescript
       - vite
       - vite-plugin-glimmerx
@@ -8651,7 +8639,7 @@ packages:
       css-tree: 2.3.1
       css-what: 6.1.0
       csso: 5.0.5
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   /tailwindcss@4.0.17:
     resolution: {integrity: sha512-OErSiGzRa6rLiOvaipsDZvLMSpsBZ4ysB4f0VKGXUrjw2jfkJRd6kjRKV2+ZmTCNvwtvgdDam5D7w6WXsdLJZw==}
@@ -8847,7 +8835,7 @@ packages:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 16.18.11
-      acorn: 8.12.1
+      acorn: 8.14.1
       acorn-walk: 8.3.2
       arg: 4.1.3
       create-require: 1.1.1
@@ -9012,7 +9000,7 @@ packages:
       extend: 3.0.2
       is-plain-obj: 4.1.0
       trough: 2.1.0
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   /unique-string@2.0.0:
     resolution: {integrity: sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg==}
@@ -9085,7 +9073,7 @@ packages:
   /unplugin@1.4.0:
     resolution: {integrity: sha512-5x4eIEL6WgbzqGtF9UV8VEC/ehKptPXDS6L2b0mv4FRMkJxRtjaJfOWDd6a8+kYbqsjklix7yWP0N3SUepjXcg==}
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.1
       chokidar: 3.5.3
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.5.0
@@ -9099,7 +9087,7 @@ packages:
     dependencies:
       browserslist: 4.23.3
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.1
     dev: true
 
   /update-browserslist-db@1.1.3(browserslist@4.24.4):
@@ -9162,7 +9150,6 @@ packages:
         optional: true
     dependencies:
       typescript: 5.8.2
-    dev: false
 
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -9199,8 +9186,8 @@ packages:
       '@types/unist': 3.0.0
       unist-util-stringify-position: 4.0.0
 
-  /vfile@6.0.1:
-    resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+  /vfile@6.0.2:
+    resolution: {integrity: sha512-zND7NlS8rJYb/sPqkb13ZvbbUoExdbi4w3SfRrMq6R3FvnLQmmfpajJNITuuYm6AZ5uao9vy4BAos3EXBPf2rg==}
     dependencies:
       '@types/unist': 3.0.0
       unist-util-stringify-position: 4.0.0
@@ -9292,6 +9279,7 @@ packages:
       rollup: 4.37.0
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
 
   /vite@6.2.3(@types/node@20.16.0):
     resolution: {integrity: sha512-IzwM54g4y9JA/xAeBPNaDXiBF8Jsgl3VBQ2YQ/wOY6fyW3xMdSoltIV3Bo59DErdqdE6RxUfv8W69DvUorE4Eg==}
