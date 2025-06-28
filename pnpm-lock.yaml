@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@modular-forms/qwik':
         specifier: 0.29.1
-        version: 0.29.1(@builder.io/qwik-city@1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3)))(@builder.io/qwik@1.13.0(vite@7.0.0(@types/node@22.15.3)))(typescript@5.8.3)
+        version: 0.29.1(@builder.io/qwik-city@1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3)))(@builder.io/qwik@1.13.0(vite@7.0.0(@types/node@22.15.3)))(typescript@5.8.3)
       '@qwikest/icons':
         specifier: 0.0.13
         version: 0.0.13(@builder.io/qwik@1.13.0(vite@7.0.0(@types/node@22.15.3)))
@@ -28,8 +28,8 @@ importers:
         specifier: 1.13.0
         version: 1.13.0(vite@7.0.0(@types/node@22.15.3))
       '@builder.io/qwik-city':
-        specifier: 1.13.0
-        version: 1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
+        specifier: 1.14.1
+        version: 1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
       '@playwright/test':
         specifier: 1.53.1
         version: 1.53.1
@@ -135,8 +135,8 @@ packages:
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     hasBin: true
 
-  '@builder.io/qwik-city@1.13.0':
-    resolution: {integrity: sha512-CDo5/JBLyJkC8uWn/DO5SnhXzGPLr9ecbAprloQMwoDaYFh846DRXhD+dK1Sqoa84O40+dk3p5Zltf2SkXdV2w==}
+  '@builder.io/qwik-city@1.14.1':
+    resolution: {integrity: sha512-VsAvk7u2HyyTnL9GhpT+h10t2XAIlxtv6LFL3Xt9/1QZ6lMfGWMcMEAMuZB1Ib+D/oTfu7QRqZngRg3FsrIKyg==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       vite: ^5
@@ -3445,7 +3445,7 @@ snapshots:
 
   '@builder.io/partytown@0.10.3': {}
 
-  '@builder.io/qwik-city@1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))':
+  '@builder.io/qwik-city@1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))':
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
       '@types/mdx': 2.0.13
@@ -3779,10 +3779,10 @@ snapshots:
       '@types/react': 19.1.8
       react: 19.1.0
 
-  '@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3)))(@builder.io/qwik@1.13.0(vite@7.0.0(@types/node@22.15.3)))(typescript@5.8.3)':
+  '@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3)))(@builder.io/qwik@1.13.0(vite@7.0.0(@types/node@22.15.3)))(typescript@5.8.3)':
     dependencies:
       '@builder.io/qwik': 1.13.0(vite@7.0.0(@types/node@22.15.3))
-      '@builder.io/qwik-city': 1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
+      '@builder.io/qwik-city': 1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
       decode-formdata: 0.8.0
       valibot: 1.1.0(typescript@5.8.3)
     transitivePeerDependencies:
@@ -6564,7 +6564,7 @@ snapshots:
       magic-string: 0.30.17
       react-docgen-typescript: 2.4.0(typescript@5.8.3)
     optionalDependencies:
-      '@builder.io/qwik-city': 1.13.0(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
+      '@builder.io/qwik-city': 1.14.1(acorn@8.15.0)(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.0(@types/node@22.15.3))
     transitivePeerDependencies:
       - acorn
       - rollup
